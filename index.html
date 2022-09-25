@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions | 25-09-2022</title>
+</head>
+<body>
+    <h1>ES6 Functions</h1>
+
+    <script>
+        // function doSum(){
+        //     let result = num1 + num2;
+        //     return result;
+        // }
+        // console.log(doSum(2, 5));
+
+
+        function findAvg(arr){
+            let sum =0;
+            arr.map((eachItem)=>{
+                sum = sum + eachItem;
+            })
+            let avg = sum / arr.length;
+            return avg;
+        }
+        console.log(findAvg([23, 26, 29, 27, 28]));
+        console.log(findAvg([32, 30, 31, 25, 29]));
+    </script>
+
+</body>
+</html>
